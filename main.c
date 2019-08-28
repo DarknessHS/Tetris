@@ -1,31 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#define COLUMNS 60
-#define ROWS 25 
-
-void init(char matrix[ROWS][COLUMNS]){
-    int i,j;
-
-    for (i=0;i<ROWS;i++){
-        for(j=0;j<COLUMNS;j++){
-            matrix[i][j] = '\xDB';
-        }
-    }
-
-}
-
-void printMatrix(char matrix[ROWS][COLUMNS]){
-    int i,j;
-
-    for (i=0;i<ROWS;i++){
-        for(j=0;j<COLUMNS;j++){
-            printf("%c",matrix[i][j]);
-        }
-        printf("\n");
-    }
-
-
-}
+#include "tetris.h"
 
 int main(){
     char matrix[ROWS][COLUMNS];
@@ -52,3 +25,5 @@ int main(){
 
     return 0;
 }
+
+
