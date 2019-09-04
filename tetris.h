@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 // configurações da matriz principal do jogo 
 
 #define COLUMNS 60

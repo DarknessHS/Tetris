@@ -1,4 +1,5 @@
 #include "tetris.h"
+#include "display.h"
 
 int main(){
     char matrix[ROWS][COLUMNS];
@@ -10,8 +11,12 @@ int main(){
     //inicializando matriz
     init(matrix);
 
+    //apagar o cursor da tela
+    ShowConsoleCursor(0);
+    system("cls");
+
     while(1){
-        system("cls");
+        gotoxy(0,0);
 
         matrix[posI][posJ] ='@';
 

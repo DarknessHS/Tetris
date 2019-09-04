@@ -1,2 +1,2 @@
-gcc main.c tetris.c -o programa
+gcc main.c tetris.c display.c -o programa
 start .\programa.exe
