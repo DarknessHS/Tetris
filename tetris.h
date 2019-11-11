@@ -2,8 +2,8 @@
     Jogo interativo Tetris implementado em linguagem C para uso 
     no console (terminal de comandos)
 
-    Autor: Augusto Luengo Pereira Nunes
-    Data: 28/08/2019
+    Autor: Otavio Henrique Silva
+    Data: 29/08/2019
 
 */
 
@@ -70,3 +70,18 @@ void printMatrix(char matrix[ROWS][COLUMNS]);
     passado por parâmetro.
 */
 void drawBar(char matrix[ROWS][COLUMNS], Bloco barra, int simbolo);
+
+/*
+    Inicializar a peça do tipo barra
+*/
+void initBar(Bloco *barra);
+
+/*
+    Rotaciona blocos do jogo
+*/
+void rotate(Bloco *bloco);
+
+/*
+    Verifica a colisão de blocos
+*/
+int collisionDetect(char matrix[ROWS][COLUMNS], Bloco barra);
